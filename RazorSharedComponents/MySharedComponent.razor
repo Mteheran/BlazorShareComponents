@@ -1,0 +1,11 @@
+﻿<div class="my-component">
+    This component is defined in the <strong>RazorSharedComponents</strong> package.
+    This component can be used in different Blazor projects
+    This component was call by <strong>@CallModule</strong>
+</div>
+
+@code {
+    // Demonstrates how a parent component can supply parameters
+    [Parameter]
+    public string CallModule { get; set; }
+}
