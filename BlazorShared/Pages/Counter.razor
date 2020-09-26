@@ -1,0 +1,16 @@
+﻿@page "/counter"
+
+<ComponentTitle Title="Counter" />
+
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}
